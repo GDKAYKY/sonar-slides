@@ -6,7 +6,8 @@
     <title>SonarQube Dashboard</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Roboto:wght@400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/static/site.css">
-    <script src="/static/script.js" defer></script>   
+    <script src="https://cdn.jsdelivr.net/npm/xlsx@0.19.3/dist/xlsx.full.min.js"></script>
+    <script src="/static/script.js" defer></script>
 
 </head>
 <body>
@@ -72,7 +73,8 @@
                 
                 <div class="separator-line line-4"></div>
                 
-                <button class="export-button" id="exportBtn">Export to Excel</button>
+                <button class="export-button" id="exportBtn">Export to CSV</button>
+                <button class="export-button" id="exportBtnXlsx">Export to Excel (XLSX)</button>
                 
                 <!-- Informações adicionais -->
                 <div class="info-container">
