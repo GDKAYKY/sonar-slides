@@ -1,0 +1,724 @@
+
+        /* Restored original container structure and colors */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+
+        /* Main container - original gray background */
+        .main-container {
+            position: relative;
+            background: #444444;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 2px;
+        }
+
+        /* White main frame - original dimensions */
+        .main-frame {
+            position: relative;
+            background: #FFFFFF;
+        }
+
+        /* Restored original dark header */
+        .header {
+            position: relative;
+            height: 100px;
+            background: #333333;
+            display: flex;
+            align-items: center;
+        }
+
+        /* Logo placeholder */
+        .logo {
+            position: absolute;
+            width: 210px;
+            height: 51px;
+            left: 21px;
+            top: 17px;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 16px;
+        }
+
+        /* Restored original Dashboard title with underline */
+        .dashboard-title {
+            position: absolute;
+            width: 170px;
+            height: 50px;
+            left: 315px;
+            top: 34px;
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 29px;
+            color: #FFFFFF;
+        }
+
+        .dashboard-underline {
+            position: absolute;
+            width: 128px;
+            height: 0px;
+            left: 315px;
+            top: 61.5px;
+            border: 1px solid #FFFFFF;
+        }
+
+        /* Restored original Material Design search bar */
+        .search-container {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            padding: 0px;
+            gap: 4px;
+            position: absolute;
+            width: 360px;
+            min-width: 360px;
+            max-width: 720px;
+            height: 56px;
+            left: 1500px;
+            top: 22px;
+            background: #FFFFFF;
+            border-radius: 12px;
+        }
+
+        .search-state-layer {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            padding: 4px;
+            gap: 4px;
+            width: 360px;
+            height: 56px;
+            flex: none;
+            order: 0;
+            align-self: stretch;
+            flex-grow: 1;
+        }
+
+        .search-icon-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 0px;
+            gap: 10px;
+            width: 48px;
+            height: 48px;
+            flex: none;
+            order: 0;
+            flex-grow: 0;
+        }
+
+        .search-icon-wrapper {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            padding: 8px;
+            gap: 10px;
+            width: 40px;
+            height: 40px;
+            border-radius: 100px;
+        }
+
+        .search-icon {
+            width: 24px;
+            height: 24px;
+            background: #000000;
+            mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='currentColor'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z'/%3E%3C/svg%3E") no-repeat center;
+            mask-size: contain;
+        }
+
+        .search-content {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            padding: 0px;
+            gap: 10px;
+            width: 248px;
+            height: 48px;
+            flex: none;
+            order: 1;
+            align-self: stretch;
+            flex-grow: 1;
+        }
+
+        .search-input {
+            width: 175px;
+            height: 24px;
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+            display: flex;
+            align-items: center;
+            letter-spacing: 0.5px;
+            color: #6B6B6B;
+            border: none;
+            outline: none;
+            background: transparent;
+        }
+
+        /* Restored original right sidebar */
+        .right-sidebar {
+            position: absolute;
+            width: 600px;
+            height: 981px;
+            top: 100px;
+            border-right: 1px solid #7e7e7e;
+            background: #FFFFFF;
+        }
+
+        .sidebar-title {
+            position: absolute;
+            width: 549px;
+            height: 39px;
+            left: 61px;
+            top: 41px;
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 32px;
+            line-height: 24px;
+            display: flex;
+            align-items: center;
+            letter-spacing: 0.5px;
+            color: #000000;
+        }
+
+
+
+        /* Restored original separator lines */
+        .separator-line {
+            position: absolute;
+            width: 500px;
+            height: 0px;
+            left: 50px;
+            border: 1px solid #949494;
+        }
+
+        .line-1 { top: 140px; }
+        .line-2 { top: 286px; }
+        .line-3 { top: 454px; }
+
+        /* Restored original bug metrics */
+        .bug-count {
+            position: absolute;
+            width: 78px;
+            height: 80px;
+            left: 62px;
+            top: 169px;
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 36px;
+            line-height: 24px;
+            display: flex;
+            align-items: center;
+            letter-spacing: 0.5px;
+            color: #3F3F3F;
+        }
+
+        .bug-label {
+            position: absolute;
+            width: 90px;
+            height: 24px;
+            left: 95px;
+            top: 197px;
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 36px;
+            line-height: 24px;
+            display: flex;
+            align-items: center;
+            letter-spacing: 0.5px;
+            color: #373737;
+        }
+
+        .bug-icon {
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            left: 16px;
+            top: 189px;
+            background: #742E2E;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .bug-icon::after {
+            content: "🐛";
+            font-size: 20px;
+        }
+
+        /* Restored original vulnerability metrics */
+        .vulnerability-count {
+            position: absolute;
+            width: 78px;
+            height: 80px;
+            left: 62px;
+            top: 335px;
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 36px;
+            line-height: 24px;
+            display: flex;
+            align-items: center;
+            letter-spacing: 0.5px;
+            color: #3F3F3F;
+        }
+
+        .vulnerability-label {
+            position: absolute;
+            width: 258px;
+            height: 24px;
+            left: 95px;
+            top: 363px;
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 36px;
+            line-height: 24px;
+            display: flex;
+            align-items: center;
+            letter-spacing: 0.5px;
+            color: #373737;
+        }
+
+        .vulnerability-icon {
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            left: 16px;
+            top: 355px;
+            background: #000000;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .vulnerability-icon::after {
+            content: "";
+            font-size: 20px;
+        }
+
+        /* Restored original reliability badges */
+        .reliability-badge-1 {
+            box-sizing: border-box;
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            left: 554px;
+            top: 295px;
+            background: #16B807;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #FFFFFF;
+            font-family: 'Inter';
+            font-weight: 400;
+            font-size: 20px;
+        }
+
+        .reliability-badge-2 {
+            box-sizing: border-box;
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            left: 554px;
+            top: 459px;
+            background: #16B807;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #FFFFFF;
+            font-family: 'Inter';
+            font-weight: 400;
+            font-size: 20px;
+        }
+
+        .reliability-text-1 {
+            position: absolute;
+            width: 72px;
+            height: 24px;
+            left: 471px;
+            top: 301px;
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 300;
+            font-size: 15px;
+            line-height: 24px;
+            display: flex;
+            align-items: center;
+            letter-spacing: 0.5px;
+            color: #000000;
+        }
+
+        .reliability-text-2 {
+            position: absolute;
+            width: 75.69px;
+            height: 24px;
+            left: 471px;
+            top: 467px;
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 300;
+            font-size: 15px;
+            line-height: 24px;
+            display: flex;
+            align-items: center;
+            letter-spacing: 0.5px;
+            color: #000000;
+        }
+
+        /* Added export button with SonarQube styling */
+        .export-button {
+            position: absolute;
+            right: 50px;
+            top: 720px;
+            background: #059669;
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 8px;
+            font-family: 'Inter';
+            font-weight: 600;
+            font-size: 14px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            transition: background 0.2s;
+        }
+
+        .export-button:hover {
+            background: #047857;
+        }
+
+        .export-button::before {
+            content: "📊";
+            font-size: 16px;
+        }
+
+        .line-4 { top: 620px; }
+
+        /* Code Smells metrics */
+        .code-smell-count {
+            position: absolute;
+            width: 78px;
+            height: 80px;
+            left: 62px;
+            top: 520px;
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 36px;
+            line-height: 24px;
+            display: flex;
+            align-items: center;
+            letter-spacing: 0.5px;
+            color: #3F3F3F;
+        }
+
+        .code-smell-label {
+            position: absolute;
+            width: 200px;
+            height: 24px;
+            left: 95px;
+            top: 548px;
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 36px;
+            line-height: 24px;
+            display: flex;
+            align-items: center;
+            letter-spacing: 0.5px;
+            color: #373737;
+        }
+
+        .code-smell-icon {
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            left: 16px;
+            top: 520px;
+            background: #FF6B35;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .code-smell-icon::after {
+            content: "🔍";
+            font-size: 20px;
+        }
+
+        /* Campos de configuração */
+        .config-container {
+            position: absolute;
+            left: 500px;
+            top: 25px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 15px;
+            border-radius: 8px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .config-field {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+
+        .config-field label {
+            color: #FFFFFF;
+            font-size: 12px;
+            font-weight: 500;
+        }
+
+        .config-field input {
+            padding: 8px 12px;
+            border: none;
+            border-radius: 4px;
+            font-size: 14px;
+            background: #FFFFFF;
+            color: #333333;
+            min-width: 200px;
+        }
+
+        .config-field input:focus {
+            outline: 2px solid #059669;
+        }
+
+        .query-btn {
+            background: #059669;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 6px;
+            font-family: 'Inter';
+            font-weight: 600;
+            font-size: 14px;
+            cursor: pointer;
+            transition: background 0.2s;
+            margin-top: 5px;
+        }
+
+        .query-btn:hover {
+            background: #047857;
+        }
+
+        /* Informações adicionais */
+        .info-container {
+            position: absolute;
+            left: 50px;
+            top: 780px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .info-item {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+
+        .info-label {
+            font-family: 'Inter';
+            font-size: 14px;
+            font-weight: 600;
+            color: #666666;
+        }
+
+        .info-value {
+            font-family: 'Inter';
+            font-size: 16px;
+            font-weight: 500;
+            color: #333333;
+            padding: 5px 0;
+        }
+
+        /* Ajuste da posição do botão de exportação */
+        .export-button {
+            position: absolute;
+            right: 50px;
+            top: 720px;
+            background: #059669;
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 8px;
+            font-family: 'Inter';
+            font-weight: 600;
+            font-size: 14px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            transition: background 0.2s;
+        }
+
+        /* Botão abrir consulta avançada */
+        .advanced-query-container {
+            position: absolute;
+            left: 820px;
+            top: 35px;
+        }
+
+        .advanced-query-btn {
+            background: #2563eb;
+            color: #ffffff;
+            border: none;
+            padding: 10px 16px;
+            border-radius: 6px;
+            font-family: 'Inter';
+            font-weight: 600;
+            font-size: 14px;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+
+        .advanced-query-btn:hover {
+            background: #1d4ed8;
+        }
+
+        /* Modal */
+        .modal {
+            position: fixed;
+            inset: 0;
+            z-index: 1000;
+        }
+
+        .modal-overlay {
+            position: absolute;
+            inset: 0;
+            background: rgba(0,0,0,0.45);
+        }
+
+        .modal-content {
+            position: relative;
+            width: 680px;
+            max-width: 90vw;
+            background: #ffffff;
+            border-radius: 12px;
+            margin: 8vh auto 0 auto;
+            padding: 16px 16px 12px 16px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.25);
+        }
+
+        .modal-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 4px 4px 12px 4px;
+            border-bottom: 1px solid #e5e7eb;
+        }
+
+        .modal-header h3 {
+            font-family: 'Inter';
+            font-size: 18px;
+            font-weight: 700;
+            color: #111827;
+        }
+
+        .modal-close {
+            background: transparent;
+            border: none;
+            font-size: 18px;
+            cursor: pointer;
+            color: #6b7280;
+        }
+
+        .modal-body {
+            padding: 16px 4px 8px 4px;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .modal-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 12px;
+        }
+
+        .modal-field-row {
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+        }
+
+        .modal-field-row label {
+            font-size: 12px;
+            font-weight: 600;
+            color: #374151;
+        }
+
+        .modal-field-row input,
+        .modal-field-row select {
+            padding: 8px 10px;
+            border: 1px solid #e5e7eb;
+            border-radius: 6px;
+            font-size: 14px;
+        }
+
+        .modal-footer {
+            display: flex;
+            gap: 10px;
+            justify-content: flex-end;
+            padding-top: 8px;
+            border-top: 1px solid #e5e7eb;
+        }
+
+        .modal-action {
+            background: #059669;
+            color: white;
+            border: none;
+            padding: 10px 16px;
+            border-radius: 6px;
+            font-family: 'Inter';
+            font-weight: 600;
+            font-size: 14px;
+            cursor: pointer;
+        }
+
+        .modal-action.secondary {
+            background: #111827;
+        }
+
+        .modal-result {
+            margin-top: 12px;
+            padding: 10px;
+            background: #0b1020;
+            color: #e5e7eb;
+            border-radius: 6px;
+            max-height: 280px;
+            overflow: auto;
+            font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+            font-size: 12px;
+        }
